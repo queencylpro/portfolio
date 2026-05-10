@@ -33,7 +33,7 @@
             border-bottom: 6px solid var(--amber);
         }
 
-        .container { max-width: 1000px; margin: auto; padding: 0 20px; }
+        .container { max-width: 1100px; margin: auto; padding: 0 20px; }
         
         h1 { margin: 0; font-size: 3rem; letter-spacing: 1px; color: var(--blush); }
         .subtitle { font-size: 1.1rem; color: var(--champagne); margin-top: 10px; text-transform: uppercase; letter-spacing: 3px; font-weight: bold; }
@@ -41,26 +41,26 @@
         .section { padding: 4rem 0; border-bottom: 1px solid var(--champagne); }
         h2 { color: var(--amber); border-left: 5px solid var(--cognac); padding-left: 15px; margin-bottom: 30px; }
 
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
 
         .card {
             background: white;
-            padding: 25px;
-            border-radius: 15px;
+            padding: 20px;
+            border-radius: 12px;
             border: 1px solid var(--champagne);
-            transition: all 0.3s ease;
             text-align: center;
+            transition: all 0.3s ease;
         }
 
-        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(38, 19, 17, 0.1); }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 8px 15px rgba(38, 19, 17, 0.1); border-color: var(--amber); }
 
-        .tool-icon { font-size: 2.5rem; color: var(--emerald); margin: 10px; display: inline-block; }
-        .tool-name { display: block; font-size: 0.8rem; font-weight: bold; color: var(--amber); margin-top: 5px; }
+        .tool-icon { font-size: 2.2rem; color: var(--emerald); margin-bottom: 10px; display: block; }
+        .tool-name { font-size: 0.85rem; font-weight: bold; color: var(--espresso); }
 
-        .experience-item { margin-bottom: 40px; position: relative; padding-left: 20px; border-left: 2px solid var(--champagne); }
+        .experience-item { margin-bottom: 40px; padding-left: 20px; border-left: 2px solid var(--champagne); }
         .exp-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; }
         .date { color: var(--amber); font-weight: bold; font-size: 0.9rem; }
-        h3 { color: var(--emerald); margin: 0 0 10px 0; font-size: 1.4rem; }
+        h3 { color: var(--emerald); margin: 0 0 8px 0; font-size: 1.3rem; }
 
         .contact-btn {
             display: inline-block;
@@ -83,45 +83,50 @@
     <div class="container">
         <h1>Queency Anne T. Lim</h1>
         <div class="subtitle">Technical Support | CSR | Sales Representative</div>
-        <p>Expert in technical troubleshooting, team operations, and customer satisfaction across diverse industries[cite: 70].</p>
-        <a href="mailto:queencylim1995@gmail.com" class="contact-btn">Hire Me</a>
+        <p>Expert in technical troubleshooting, team operations, and customer satisfaction.</p>
+        <a href="mailto:queencylim1995@gmail.com" class="contact-btn">Work With Me</a>
     </div>
 </header>
 
 <div class="container">
     <section class="section">
-        <h2>Tools & Technologies</h2>
+        <h2>Complete Toolset & Software</h2>
         <div class="grid">
-            <div class="card">
-                <h3>CRM & Support</h3>
-                <div class="tool-icon"><i class="devicon-salesforce-plain"></i><span class="tool-name">Salesforce</span></div>
-                <div class="tool-icon"><i class="devicon-zendesk-plain"></i><span class="tool-name">Zendesk</span></div>
-                <div class="tool-icon"><i class="fa-solid fa-headset"></i><span class="tool-name">GoHighLevel</span></div>
-            </div>
-            <div class="card">
-                <h3>Communication</h3>
-                <div class="tool-icon"><i class="devicon-slack-plain"></i><span class="tool-name">Slack</span></div>
-                <div class="tool-icon"><i class="fa-solid fa-phone-volume"></i><span class="tool-name">RingCentral</span></div>
-                <div class="tool-icon"><i class="devicon-microsoftteams-plain"></i><span class="tool-name">MS Teams</span></div>
-            </div>
-            <div class="card">
-                <h3>Productivity</h3>
-                <div class="tool-icon"><i class="devicon-google-plain"></i><span class="tool-name">Google Workspace</span></div>
-                <div class="tool-icon"><i class="devicon-asana-plain"></i><span class="tool-name">Asana</span></div>
-                <div class="tool-icon"><i class="devicon-canva-plain"></i><span class="tool-name">Canva</span></div>
-            </div>
+            <div class="card"><i class="devicon-zendesk-plain tool-icon"></i><span class="tool-name">Zendesk</span></div>
+            <div class="card"><i class="devicon-salesforce-plain tool-icon"></i><span class="tool-name">Salesforce</span></div>
+            <div class="card"><i class="fa-solid fa-headset tool-icon"></i><span class="tool-name">GoHighLevel</span></div>
+            <div class="card"><i class="fa-solid fa-database tool-icon"></i><span class="tool-name">Zoho</span></div>
+            <div class="card"><i class="devicon-oracle-original tool-icon"></i><span class="tool-name">Oracle CRM</span></div>
+            <div class="card"><i class="fa-solid fa-gears tool-icon"></i><span class="tool-name">Hydra2</span></div>
+            
+            <div class="card"><i class="fa-solid fa-phone-volume tool-icon"></i><span class="tool-name">RingCentral</span></div>
+            <div class="card"><i class="fa-solid fa-tty tool-icon"></i><span class="tool-name">Twilio</span></div>
+            <div class="card"><i class="fa-solid fa-tower-broadcast tool-icon"></i><span class="tool-name">Five9</span></div>
+            <div class="card"><i class="devicon-slack-plain tool-icon"></i><span class="tool-name">Slack</span></div>
+            <div class="card"><i class="devicon-discord-plain tool-icon"></i><span class="tool-name">Discord</span></div>
+            <div class="card"><i class="fa-brands fa-telegram tool-icon"></i><span class="tool-name">Telegram</span></div>
+            <div class="card"><i class="fa-brands fa-skype tool-icon"></i><span class="tool-name">Skype</span></div>
+            <div class="card"><i class="fa-solid fa-video tool-icon"></i><span class="tool-name">Zoom</span></div>
+            <div class="card"><i class="devicon-microsoftteams-plain tool-icon"></i><span class="tool-name">MS Teams</span></div>
+
+            <div class="card"><i class="devicon-google-plain tool-icon"></i><span class="tool-name">Google Sheets</span></div>
+            <div class="card"><i class="fa-solid fa-file-lines tool-icon"></i><span class="tool-name">Google Docs</span></div>
+            <div class="card"><i class="fa-solid fa-envelope tool-icon"></i><span class="tool-name">MS Outlook</span></div>
+            <div class="card"><i class="devicon-asana-plain tool-icon"></i><span class="tool-name">Asana</span></div>
+            <div class="card"><i class="devicon-canva-plain tool-icon"></i><span class="tool-name">Canva</span></div>
+            <div class="card"><i class="fa-solid fa-film tool-icon"></i><span class="tool-name">Filmora</span></div>
         </div>
     </section>
 
     <section class="section">
-        <h2>Professional Experience</h2>
+        <h2>Professional Journey</h2>
         
         <div class="experience-item">
             <div class="exp-header">
                 <h3>Customer Service Representative | Contact Automation</h3>
                 <span class="date">Mar 2025 - Apr 2026</span>
             </div>
-            <p>Managed professional call handling and time-sensitive messaging for multiple service industries to ensure client satisfaction[cite: 80].</p>
+            <p>Managed professional call handling and time-sensitive messaging for multiple service industries to ensure client satisfaction and reinforcement of business value.</p>
         </div>
 
         <div class="experience-item">
@@ -129,7 +134,7 @@
                 <h3>Technical-Sales Support | Asurion</h3>
                 <span class="date">Jun 2021 - Feb 2025</span>
             </div>
-            <p>Provided expert support for IoT and mobile devices while recommending technology protection plans[cite: 83, 84, 85].</p>
+            <p>Provided expert support for cellphones and IoT devices while driving technology protection plan sales and optimizing device performance.</p>
         </div>
 
         <div class="experience-item">
@@ -137,7 +142,7 @@
                 <h3>Teamleader & Shiftmanager | Jobtiles</h3>
                 <span class="date">Sep 2022 - Jan 2023</span>
             </div>
-            <p>Managed daily team operations, oversaw workflow, and handled specialized IT and payroll tasks[cite: 89, 90, 91].</p>
+            <p>Led daily team operations, oversaw workflow, and assisted with specialized payroll, IT issues, and European job board research.</p>
         </div>
 
         <div class="experience-item">
@@ -145,15 +150,15 @@
                 <h3>Digital Support | Capital One</h3>
                 <span class="date">Apr 2021 - Jun 2021</span>
             </div>
-            <p>Resolved mobile app and account access issues to ensure a seamless digital banking experience[cite: 96, 98].</p>
+            <p>Guided customers through digital banking platforms and resolved account access or mobile app functionality issues.</p>
         </div>
 
         <div class="experience-item">
             <div class="exp-header">
                 <h3>Senior Tech Expert | iQor</h3>
-                <span class="date">May 2019 - Sep 2020</span>
+                <span class="date">May 2019 - Mar 2021</span>
             </div>
-            <p>Handled billing concerns and retention strategies while proactively driving device protection sales[cite: 106, 107].</p>
+            <p>Technical lead for telecom accounts, managing billing, retention strategies, and device protection sales.</p>
         </div>
 
         <div class="experience-item">
@@ -161,19 +166,35 @@
                 <h3>Senior Agent | TeleTech</h3>
                 <span class="date">Jan 2016 - May 2019</span>
             </div>
-            <p>Mentored new hires and adapted to various communication channels including chat, email, and voice[cite: 111, 112].</p>
+            <p>Mentored new hires and provided versatile multi-channel support across chat, email, and voice platforms.</p>
+        </div>
+
+        <div class="experience-item">
+            <div class="exp-header">
+                <h3>CSR I | Teleperformance</h3>
+                <span class="date">Mar 2014 - Jan 2016</span>
+            </div>
+            <p>Honed communication and multitasking skills in a fast-paced BPO environment assigned to a telecom account.</p>
+        </div>
+
+        <div class="experience-item">
+            <div class="exp-header">
+                <h3>Cashier | Jollibee</h3>
+                <span class="date">Sep 2013 - Feb 2014</span>
+            </div>
+            <p>Foundational customer service role involving order entry, transaction handling, and team collaboration.</p>
         </div>
     </section>
 
     <section class="section" style="text-align: center; border-bottom: none;">
         <h2>Contact Details</h2>
-        <p><strong>Queency Anne T. Lim</strong></p>
-        <p>+63.905.414.5650 | queencylim1995@gmail.com [cite: 68]</p>
+        <p><strong>San Pedro City, Laguna, 4023</strong></p>
+        <p>+63.905.414.5650 | queencylim1995@gmail.com</p>
     </section>
 </div>
 
 <footer>
-    &copy; 2026 | Technical Support, CSR & Sales Professional [cite: 69]
+    &copy; 2026 Queency Anne T. Lim | BS Hospitality Management (Undergraduate)
 </footer>
 
 </body>
