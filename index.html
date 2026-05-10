@@ -57,7 +57,9 @@
         .tool-name { font-size: 0.8rem; font-weight: bold; }
 
         .experience-item { margin-bottom: 35px; padding-left: 20px; border-left: 3px solid var(--cognac); }
-        .date { color: var(--amber); font-weight: bold; font-size: 0.9rem; }
+        .exp-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; margin-bottom: 5px; }
+        .date { color: var(--amber); font-weight: bold; font-size: 0.95rem; }
+        h3 { color: var(--emerald); margin: 0; font-size: 1.3rem; }
 
         /* Testimonials Section */
         .testimonial-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
@@ -84,21 +86,70 @@
 
 <div class="container">
     <section class="section">
-        <h2>Professional Journey</h2>
+        <h2>Employment History</h2>
+        
         <div class="experience-item">
-            <h3>Customer Service Representative | Contact Automation</h3>
-            <span class="date">Mar 2025 - Apr 2026</span>
-            <p>Managed call handling and time-sensitive messaging with a focus on courteous tone and reinforcing business reliability.</p>
+            <div class="exp-header">
+                <h3>Customer Service Representative | Contact Automation</h3>
+                <span class="date">Mar 2025 - Apr 2026</span>
+            </div>
+            <p>Provided professional call handling and customer support for multiple service industries. Documented requests and ensured consistent service and client satisfaction with a courteous tone.</p>
         </div>
+
         <div class="experience-item">
-            <h3>Technical-Sales Support | Asurion</h3>
-            <span class="date">Jun 2021 - Feb 2025</span>
-            <p>Provided expert IoT and mobile support while successfully recommending protection plans to secure customer investments.</p>
+            <div class="exp-header">
+                <h3>Technical-Sales Support | Asurion</h3>
+                <span class="date">Jun 2021 - Feb 2025</span>
+            </div>
+            <p>Expert support for cellphones and IoT devices (smart home/wearables). Successfully combined technical expertise with sales to recommend protection plans and drive satisfaction.</p>
         </div>
+
         <div class="experience-item">
-            <h3>Teamleader & Shiftmanager | Jobtiles</h3>
-            <span class="date">Sep 2022 - Jan 2023</span>
-            <p>Oversaw daily operations, workflow management, and assisted with payroll and specialized IT troubleshooting.</p>
+            <div class="exp-header">
+                <h3>Teamleader & Shiftmanager | Jobtiles</h3>
+                <span class="date">Sep 2022 - Jan 2023</span>
+            </div>
+            <p>Managed daily operations and workflow for the team. Handled IT issues, payroll assistance, and research for European job boards.</p>
+        </div>
+
+        <div class="experience-item">
+            <div class="exp-header">
+                <h3>Digital Support | Capital One</h3>
+                <span class="date">Apr 2021 - Jun 2021</span>
+            </div>
+            <p>Assisted customers with online banking and digital tools. Resolved account access and mobile app functionality issues for a seamless digital experience.</p>
+        </div>
+
+        <div class="experience-item">
+            <div class="exp-header">
+                <h3>Senior Agent / Tech Expert | iQor</h3>
+                <span class="date">May 2019 - Mar 2021</span>
+            </div>
+            <p>Lead technical support for telecom accounts. Managed billing concerns, customer retention, and device protection sales.</p>
+        </div>
+
+        <div class="experience-item">
+            <div class="exp-header">
+                <h3>Senior Agent / Tech Expert | TeleTech</h3>
+                <span class="date">Jan 2016 - May 2019</span>
+            </div>
+            <p>Provided multi-channel support (chat, email, voice) and mentored new hires to develop their technical and customer service skills.</p>
+        </div>
+
+        <div class="experience-item">
+            <div class="exp-header">
+                <h3>CSR I | Teleperformance</h3>
+                <span class="date">Mar 2014 - Jan 2016</span>
+            </div>
+            <p>Started BPO career in a telecom account. Developed foundational skills in fast-paced problem solving and multitasking.</p>
+        </div>
+
+        <div class="experience-item">
+            <div class="exp-header">
+                <h3>Cashier | Jollibee</h3>
+                <span class="date">Sep 2013 - Feb 2014</span>
+            </div>
+            <p>Ensured efficient service and handled transactions in a high-volume customer service environment.</p>
         </div>
     </section>
 
@@ -107,17 +158,17 @@
         <div class="testimonial-grid">
             <div class="testimonial-card">
                 <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                <p>"Queency is incredibly professional. Her call handling and courtesy consistently reinforce our business value."</p>
-                <strong>— Client Feedback</strong>
+                <p>"Very professional call handling. She consistently addresses concerns with a courteous tone and reinforces our business value."</p>
+                <strong>— Professional Review</strong>
             </div>
             <div class="testimonial-card">
                 <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                <p>"Very knowledgeable tech support. She resolved my complex IoT setup issues with total patience."</p>
-                <strong>— Technical Support User</strong>
+                <p>"Expert troubleshooting. Resolved my complex smart home setup issues with great patience and clarity."</p>
+                <strong>— Technical Support Client</strong>
             </div>
             <div class="testimonial-card">
                 <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                <p>"Great sales approach—didn't just sell, but helped me understand why I needed the protection plan."</p>
+                <p>"High-level sales skills. She helped me find the right protection plan for my devices without any pressure."</p>
                 <strong>— Asurion Customer</strong>
             </div>
         </div>
@@ -126,23 +177,28 @@
     <section class="section">
         <h2>Technical Arsenal</h2>
         <div class="grid">
-            <div class="card"><i class="devicon-salesforce-plain tool-icon"></i><span class="tool-name">Salesforce</span></div>
             <div class="card"><i class="devicon-zendesk-plain tool-icon"></i><span class="tool-name">Zendesk</span></div>
+            <div class="card"><i class="devicon-salesforce-plain tool-icon"></i><span class="tool-name">Salesforce</span></div>
             <div class="card"><i class="fas fa-headset tool-icon"></i><span class="tool-name">GoHighLevel</span></div>
-            <div class="card"><i class="fas fa-phone-alt tool-icon"></i><span class="tool-name">RingCentral</span></div>
+            <div class="card"><i class="fas fa-database tool-icon"></i><span class="tool-name">Zoho / Oracle</span></div>
+            <div class="card"><i class="fas fa-phone-alt tool-icon"></i><span class="tool-name">RingCentral / Twilio</span></div>
+            <div class="card"><i class="fas fa-tower-broadcast tool-icon"></i><span class="tool-name">Five9 / Hydra2</span></div>
             <div class="card"><i class="devicon-slack-plain tool-icon"></i><span class="tool-name">Slack</span></div>
             <div class="card"><i class="devicon-google-plain tool-icon"></i><span class="tool-name">Google Workspace</span></div>
             <div class="card"><i class="devicon-asana-plain tool-icon"></i><span class="tool-name">Asana</span></div>
-            <div class="card"><i class="devicon-canva-plain tool-icon"></i><span class="tool-name">Canva</span></div>
-            <div class="card"><i class="fas fa-video tool-icon"></i><span class="tool-name">Zoom/MS Teams</span></div>
+            <div class="card"><i class="devicon-canva-plain tool-icon"></i><span class="tool-name">Canva / Filmora</span></div>
+            <div class="card"><i class="devicon-microsoftteams-plain tool-icon"></i><span class="tool-name">Teams / Skype</span></div>
+            <div class="card"><i class="fab fa-discord tool-icon"></i><span class="tool-name">Discord / Telegram</span></div>
         </div>
     </section>
 </div>
 
 <footer>
-    <p>San Pedro City, Laguna, 4023 | +63.905.414.5650</p>
-    <p>queencylim1995@gmail.com</p>
-    <p>&copy; 2026 Queency Anne T. Lim</p>
+    <div class="container">
+        <p>San Pedro City, Laguna, 4023 | +63.905.414.5650</p>
+        <p>queencylim1995@gmail.com</p>
+        <p>&copy; 2026 Queency Anne T. Lim | BS Hospitality Management (PUP)</p>
+    </div>
 </footer>
 
 </body>
