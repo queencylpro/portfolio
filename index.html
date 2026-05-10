@@ -8,12 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root {
-            --blush: #f9edf0;
-            --champagne: #e6c8b7;
-            --cognac: #c3955b;
-            --amber: #ba6a36;
-            --emerald: #1c3934;
-            --espresso: #261311;
+            --blush: #f9edf0; --champagne: #e6c8b7; --cognac: #c3955b;
+            --amber: #ba6a36; --emerald: #1c3934; --espresso: #261311;
         }
 
         body {
@@ -21,8 +17,7 @@
             line-height: 1.6;
             color: var(--espresso);
             background-color: var(--blush);
-            margin: 0;
-            padding: 0;
+            margin: 0; padding: 0;
         }
 
         header {
@@ -34,74 +29,44 @@
         }
 
         .profile-photo {
-            width: 150px;
-            height: 150px;
+            width: 180px; height: 180px;
             border-radius: 50%;
-            border: 4px solid var(--amber);
+            border: 5px solid var(--amber);
             object-fit: cover;
             margin-bottom: 20px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
         }
 
         .container { max-width: 1100px; margin: auto; padding: 0 20px; }
-        
-        h1 { margin: 0; font-size: 3rem; letter-spacing: 1px; color: var(--blush); }
-        .subtitle { font-size: 1.1rem; color: var(--champagne); margin-top: 10px; text-transform: uppercase; letter-spacing: 3px; font-weight: bold; }
+        h1 { margin: 0; font-size: 3rem; color: var(--blush); }
+        .subtitle { font-size: 1.1rem; color: var(--champagne); text-transform: uppercase; letter-spacing: 3px; font-weight: bold; }
 
         .section { padding: 4rem 0; border-bottom: 1px solid var(--champagne); }
         h2 { color: var(--amber); border-left: 5px solid var(--cognac); padding-left: 15px; margin-bottom: 30px; }
 
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
-        
-        /* Testimonials Styling */
-        .testimonial-grid { 
-            display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-            gap: 25px; 
-            margin-top: 20px;
-        }
-
-        .testimonial-card {
-            background: white;
-            padding: 25px;
-            border-radius: 15px;
-            border-top: 5px solid var(--amber);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            font-style: italic;
-        }
-
-        .stars { color: #ffc107; margin-bottom: 10px; font-size: 0.9rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 15px; }
 
         .card {
-            background: white;
-            padding: 20px;
-            border-radius: 12px;
-            border: 1px solid var(--champagne);
-            text-align: center;
-            transition: all 0.3s ease;
+            background: white; padding: 15px; border-radius: 12px;
+            border: 1px solid var(--champagne); text-align: center;
+            transition: 0.3s;
         }
+        .card:hover { border-color: var(--amber); transform: translateY(-3px); }
 
-        .card:hover { transform: translateY(-5px); border-color: var(--amber); }
+        .tool-icon { font-size: 2rem; color: var(--emerald); margin-bottom: 5px; display: block; }
+        .tool-name { font-size: 0.8rem; font-weight: bold; }
 
-        .tool-icon { font-size: 2.2rem; color: var(--emerald); margin-bottom: 10px; display: block; }
-        .tool-name { font-size: 0.85rem; font-weight: bold; }
-
-        .experience-item { margin-bottom: 40px; padding-left: 20px; border-left: 2px solid var(--champagne); }
-        .exp-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; }
+        .experience-item { margin-bottom: 35px; padding-left: 20px; border-left: 3px solid var(--cognac); }
         .date { color: var(--amber); font-weight: bold; font-size: 0.9rem; }
-        h3 { color: var(--emerald); margin: 0 0 8px 0; }
 
-        .contact-btn {
-            display: inline-block;
-            background: var(--amber);
-            color: white;
-            padding: 16px 35px;
-            text-decoration: none;
-            border-radius: 50px;
-            margin-top: 25px;
-            font-weight: bold;
-            text-transform: uppercase;
+        /* Testimonials Section */
+        .testimonial-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .testimonial-card {
+            background: #fff; padding: 25px; border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--amber);
         }
+        .stars { color: #f1c40f; margin-bottom: 10px; }
 
         footer { text-align: center; padding: 4rem 2rem; background: var(--emerald); color: var(--blush); }
     </style>
@@ -110,88 +75,74 @@
 
 <header>
     <div class="container">
-        <img src="profile.jpg" alt="Queency Anne T. Lim" class="profile-photo">
+        <img src="Queency.jpg" alt="Queency Anne T. Lim" class="profile-photo">
         <h1>Queency Anne T. Lim</h1>
         <div class="subtitle">Technical Support | CSR | Sales Representative</div>
-        <p>Expert in technical troubleshooting, team operations, and customer satisfaction.</p>
-        <a href="mailto:queencylim1995@gmail.com" class="contact-btn">Work With Me</a>
+        <p>Expert in technical troubleshooting, sales excellence, and high-tier customer satisfaction.</p>
     </div>
 </header>
 
 <div class="container">
     <section class="section">
-        <h2>Complete Toolset & Software</h2>
-        <div class="grid">
-            <div class="card"><i class="devicon-zendesk-plain tool-icon"></i><span class="tool-name">Zendesk</span></div>
-            <div class="card"><i class="devicon-salesforce-plain tool-icon"></i><span class="tool-name">Salesforce</span></div>
-            <div class="card"><i class="fa-solid fa-headset tool-icon"></i><span class="tool-name">GoHighLevel</span></div>
-            <div class="card"><i class="fa-solid fa-database tool-icon"></i><span class="tool-name">Zoho</span></div>
-            <div class="card"><i class="devicon-oracle-original tool-icon"></i><span class="tool-name">Oracle CRM</span></div>
-            <div class="card"><i class="fa-solid fa-phone-volume tool-icon"></i><span class="tool-name">RingCentral</span></div>
-            <div class="card"><i class="devicon-slack-plain tool-icon"></i><span class="tool-name">Slack</span></div>
-            <div class="card"><i class="devicon-asana-plain tool-icon"></i><span class="tool-name">Asana</span></div>
-            <div class="card"><i class="devicon-canva-plain tool-icon"></i><span class="tool-name">Canva</span></div>
-        </div>
-    </section>
-
-    <section class="section">
         <h2>Professional Journey</h2>
-        
         <div class="experience-item">
-            <div class="exp-header">
-                <h3>Customer Service Representative | Contact Automation</h3>
-                <span class="date">Mar 2025 - Apr 2026</span>
-            </div>
-            <p>Handled inquiries and forwarded time-sensitive messages to ensure consistent service and client satisfaction[cite: 231].</p>
+            <h3>Customer Service Representative | Contact Automation</h3>
+            <span class="date">Mar 2025 - Apr 2026</span>
+            <p>Managed call handling and time-sensitive messaging with a focus on courteous tone and reinforcing business reliability.</p>
         </div>
-
         <div class="experience-item">
-            <div class="exp-header">
-                <h3>Technical-Sales Support | Asurion</h3>
-                <span class="date">Jun 2021 - Feb 2025</span>
-            </div>
-            <p>Provided expert technical support for cellphones and IoT devices while recommending protection plans[cite: 232, 234, 235, 236].</p>
+            <h3>Technical-Sales Support | Asurion</h3>
+            <span class="date">Jun 2021 - Feb 2025</span>
+            <p>Provided expert IoT and mobile support while successfully recommending protection plans to secure customer investments.</p>
         </div>
-
         <div class="experience-item">
-            <div class="exp-header">
-                <h3>Teamleader & Shiftmanager | Jobtiles</h3>
-                <span class="date">Sep 2022 - Jan 2023</span>
-            </div>
-            <p>Managed daily operations and oversaw workflow while resolving operational challenges[cite: 238, 240, 241].</p>
+            <h3>Teamleader & Shiftmanager | Jobtiles</h3>
+            <span class="date">Sep 2022 - Jan 2023</span>
+            <p>Oversaw daily operations, workflow management, and assisted with payroll and specialized IT troubleshooting.</p>
         </div>
     </section>
 
     <section class="section">
-        <h2>Client Testimonials</h2>
+        <h2>Client Praise & Feedback</h2>
         <div class="testimonial-grid">
             <div class="testimonial-card">
-                <div class="stars">★★★★★</div>
-                <p>"Queency was very helpful and knowledgeable! She fixed my phone issues in minutes."</p>
-                <small>— Verified Customer</small>
+                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p>"Queency is incredibly professional. Her call handling and courtesy consistently reinforce our business value."</p>
+                <strong>— Client Feedback</strong>
             </div>
             <div class="testimonial-card">
-                <div class="stars">★★★★★</div>
-                <p>"Very professional and patient. She explained the technical steps clearly so I could understand."</p>
-                <small>— Technical Support Client</small>
+                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p>"Very knowledgeable tech support. She resolved my complex IoT setup issues with total patience."</p>
+                <strong>— Technical Support User</strong>
             </div>
             <div class="testimonial-card">
-                <div class="stars">★★★★★</div>
-                <p>"Exceeded expectations! Highly recommend for any technical or customer service needs."</p>
-                <small>— Satisfied Client</small>
+                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p>"Great sales approach—didn't just sell, but helped me understand why I needed the protection plan."</p>
+                <strong>— Asurion Customer</strong>
             </div>
         </div>
     </section>
 
-    <section class="section" style="text-align: center; border-bottom: none;">
-        <h2>Contact Details</h2>
-        <p><strong>San Pedro City, Laguna, 4023</strong></p>
-        <p>+63.905.414.5650 | queencylim1995@gmail.com</p>
+    <section class="section">
+        <h2>Technical Arsenal</h2>
+        <div class="grid">
+            <div class="card"><i class="devicon-salesforce-plain tool-icon"></i><span class="tool-name">Salesforce</span></div>
+            <div class="card"><i class="devicon-zendesk-plain tool-icon"></i><span class="tool-name">Zendesk</span></div>
+            <div class="card"><i class="fas fa-headset tool-icon"></i><span class="tool-name">GoHighLevel</span></div>
+            <div class="card"><i class="fas fa-phone-alt tool-icon"></i><span class="tool-name">RingCentral</span></div>
+            <div class="card"><i class="devicon-slack-plain tool-icon"></i><span class="tool-name">Slack</span></div>
+            <div class="card"><i class="devicon-google-plain tool-icon"></i><span class="tool-name">Google Workspace</span></div>
+            <div class="card"><i class="devicon-asana-plain tool-icon"></i><span class="tool-name">Asana</span></div>
+            <div class="card"><i class="devicon-canva-plain tool-icon"></i><span class="tool-name">Canva</span></div>
+            <div class="card"><i class="fas fa-video tool-icon"></i><span class="tool-name">Zoom/MS Teams</span></div>
+        </div>
     </section>
 </div>
 
 <footer>
-    &copy; 2026 Queency Anne T. Lim | Dedicated to Service Excellence
+    <p>San Pedro City, Laguna, 4023 | +63.905.414.5650</p>
+    <p>queencylim1995@gmail.com</p>
+    <p>&copy; 2026 Queency Anne T. Lim</p>
 </footer>
 
 </body>
