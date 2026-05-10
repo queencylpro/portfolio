@@ -6,26 +6,29 @@
     <title>Queency Lim | Technical Support & Sales Portfolio</title>
     <style>
         :root {
-            --primary-blue: #007bff;
-            --dark-bg: #121212;
-            --card-bg: #1e1e1e;
-            --text-gray: #b0b0b0;
-            --white: #ffffff;
+            --blush: #f9edf0;
+            --champagne: #e6c8b7;
+            --cognac: #c3955b;
+            --amber: #ba6a36;
+            --emerald: #1c3934;
+            --espresso: #261311;
         }
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            color: var(--white);
-            background-color: var(--dark-bg);
+            color: var(--espresso); /* */
+            background-color: var(--blush);
             margin: 0;
             padding: 0;
         }
 
         header {
-            background: linear-gradient(135deg, #001f3f, #007bff);
+            background-color: var(--emerald);
+            color: var(--blush);
             padding: 4rem 2rem;
             text-align: center;
+            border-bottom: 5px solid var(--amber);
         }
 
         .container {
@@ -34,11 +37,11 @@
             padding: 0 20px;
         }
 
-        h1 { margin: 0; font-size: 2.5rem; }
-        .subtitle { font-size: 1.2rem; color: #d1d1d1; margin-top: 10px; text-transform: uppercase; letter-spacing: 2px; }
+        h1 { margin: 0; font-size: 2.8rem; color: var(--blush); } /* */
+        .subtitle { font-size: 1.1rem; color: var(--champagne); margin-top: 10px; text-transform: uppercase; letter-spacing: 2px; font-weight: bold; } /* */
 
-        .section { padding: 3rem 0; border-bottom: 1px solid #333; }
-        h2 { color: var(--primary-blue); border-left: 4px solid var(--primary-blue); padding-left: 15px; }
+        .section { padding: 3rem 0; border-bottom: 1px solid var(--champagne); }
+        h2 { color: var(--amber); border-left: 5px solid var(--cognac); padding-left: 15px; }
 
         .grid {
             display: grid;
@@ -48,128 +51,66 @@
         }
 
         .card {
-            background: var(--card-bg);
+            background: white;
             padding: 20px;
-            border-radius: 8px;
-            transition: transform 0.3s ease;
+            border-radius: 12px;
+            border: 1px solid var(--champagne);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
         }
 
-        .card:hover { transform: translateY(-5px); border: 1px solid var(--primary-blue); }
+        .card:hover { border-color: var(--amber); transform: translateY(-3px); }
 
         .skill-tag {
             display: inline-block;
-            background: #333;
-            padding: 5px 12px;
-            border-radius: 20px;
-            margin: 5px;
-            font-size: 0.9rem;
+            background: var(--champagne);
+            color: var(--espresso);
+            padding: 6px 14px;
+            border-radius: 4px;
+            margin: 4px;
+            font-size: 0.85rem;
+            font-weight: 600;
         }
 
-        .experience-item { margin-bottom: 30px; }
-        .exp-header { display: flex; justify-content: space-between; align-items: baseline; }
-        .date { color: var(--primary-blue); font-weight: bold; }
+        .experience-item { margin-bottom: 40px; }
+        .exp-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; }
+        .date { color: var(--amber); font-weight: bold; }
+        h3 { color: var(--emerald); margin-bottom: 5px; }
 
         .contact-btn {
             display: inline-block;
-            background: var(--primary-blue);
+            background: var(--amber);
             color: white;
-            padding: 12px 25px;
+            padding: 14px 30px;
             text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
+            border-radius: 30px;
+            margin-top: 25px;
+            font-weight: bold;
+            transition: background 0.3s;
         }
 
-        footer { text-align: center; padding: 2rem; color: var(--text-gray); font-size: 0.8rem; }
+        .contact-btn:hover { background: var(--espresso); }
+
+        footer { text-align: center; padding: 3rem; background: var(--emerald); color: var(--blush); font-size: 0.9rem; }
     </style>
 </head>
 <body>
 
 <header>
     <div class="container">
-        <h1>Queency Anne T. Lim [cite: 1]</h1>
-        <div class="subtitle">Technical Support | CSR | Sales Representative [cite: 4]</div>
-        <p>Expertise in troubleshooting, IoT systems, and financial support. [cite: 5, 15, 21]</p>
-        <a href="mailto:queencylim1995@gmail.com" class="contact-btn">Hire Me</a>
-    </div>
+        <h1>Queency Anne T. Lim</h1> <div class="subtitle">Technical Support | CSR | Sales Representative</div> <p>Experienced in delivering top-tier customer support, technical troubleshooting, and sales excellence.</p> <a href="mailto:queencylim1995@gmail.com" class="contact-btn">Get In Touch</a> </div>
 </header>
 
 <div class="container">
     <section class="section">
-        <h2>Technical Arsenal</h2>
+        <h2>Expertise & Tools</h2>
         <div class="grid">
             <div class="card">
-                <h3>Platforms</h3>
-                <span class="skill-tag">Salesforce [cite: 53]</span>
-                <span class="skill-tag">Zendesk [cite: 57]</span>
-                <span class="skill-tag">Oracle CRM [cite: 62]</span>
-                <span class="skill-tag">Zoho [cite: 66]</span>
-                <span class="skill-tag">GoHighLevel [cite: 67]</span>
-            </div>
+                <h3>Platforms & CRMs</h3>
+                <span class="skill-tag">Salesforce</span> <span class="skill-tag">Zendesk</span> <span class="skill-tag">Oracle CRM</span> <span class="skill-tag">Zoho</span> <span class="skill-tag">HighLevel</span> </div>
             <div class="card">
                 <h3>Communication</h3>
-                <span class="skill-tag">Slack [cite: 59]</span>
-                <span class="skill-tag">Twilio [cite: 53]</span>
-                <span class="skill-tag">Five9 [cite: 55]</span>
-                <span class="skill-tag">Zoom [cite: 54]</span>
-            </div>
+                <span class="skill-tag">Twilio</span> <span class="skill-tag">Slack</span> <span class="skill-tag">Five9</span> <span class="skill-tag">Zoom</span> <span class="skill-tag">Discord</span> </div>
             <div class="card">
                 <h3>Productivity</h3>
-                <span class="skill-tag">Google Sheets [cite: 63]</span>
-                <span class="skill-tag">Asana [cite: 65]</span>
-                <span class="skill-tag">Microsoft Teams [cite: 56]</span>
-                <span class="skill-tag">Canva [cite: 56]</span>
-            </div>
-        </div>
-    </section>
-
-    <section class="section">
-        <h2>Professional Journey</h2>
-        
-        <div class="experience-item">
-            <div class="exp-header">
-                <h3>Technical-Sales Support | Asurion</h3>
-                <span class="date">Jun 2021 - Present [cite: 12, 13]</span>
-            </div>
-            <ul>
-                <li>Expert troubleshooting for mobile and IoT devices. [cite: 14, 15]</li>
-                <li>Driving revenue through strategic technology protection plans. [cite: 16]</li>
-            </ul>
-        </div>
-
-        <div class="experience-item">
-            <div class="exp-header">
-                <h3>Digital Support | Capital One</h3>
-                <span class="date">Apr 2021 - Jun 2021 [cite: 18, 19]</span>
-            </div>
-            <ul>
-                <li>Guided customers through digital banking and account security. [cite: 20, 21]</li>
-                <li>Enhanced financial management using digital toolsets. [cite: 22]</li>
-            </ul>
-        </div>
-
-        <div class="experience-item">
-            <div class="exp-header">
-                <h3>Senior Agent / Tech Expert | iQor</h3>
-                <span class="date">2019 - 2021 [cite: 26, 27, 28]</span>
-            </div>
-            <ul>
-                <li>Promoted to Technical Support Specialist for telecom accounts. [cite: 30]</li>
-                <li>Managed high-level billing, retention, and sales strategies. [cite: 31]</li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="section" style="text-align: center;">
-        <h2>Let's Connect</h2>
-        <p>Located in: San Pedro City, Laguna [cite: 3]</p>
-        <p>Email: queencylim1995@gmail.com [cite: 2]</p>
-        <p>Phone: +63.905.414.5650 </p>
-    </section>
-</div>
-
-<footer>
-    &copy; 2026 Queency Anne T. Lim. All Rights Reserved.
-</footer>
-
-</body>
-</html>
+                <span class="skill-tag">Asana</span> <span class="skill
