@@ -1,79 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Queency Lim Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queency Lim | Technical Support & Sales Portfolio</title>
+    <style>
+        :root {
+            --primary-blue: #007bff;
+            --dark-bg: #121212;
+            --card-bg: #1e1e1e;
+            --text-gray: #b0b0b0;
+            --white: #ffffff;
+        }
 
-  <style>
-    body{
-      font-family: Arial, sans-serif;
-      background:#f4f4f4;
-      margin:0;
-      padding:40px;
-      color:#333;
-    }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--white);
+            background-color: var(--dark-bg);
+            margin: 0;
+            padding: 0;
+        }
 
-    .card{
-      max-width:900px;
-      margin:auto;
-      background:white;
-      padding:40px;
-      border-radius:12px;
-      box-shadow:0 4px 12px rgba(0,0,0,0.1);
-    }
+        header {
+            background: linear-gradient(135deg, #001f3f, #007bff);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
 
-    h1{
-      color:#55604f;
-      font-size:48px;
-      margin-bottom:10px;
-    }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 0 20px;
+        }
 
-    h2{
-      margin-top:30px;
-      color:#55604f;
-    }
+        h1 { margin: 0; font-size: 2.5rem; }
+        .subtitle { font-size: 1.2rem; color: #d1d1d1; margin-top: 10px; text-transform: uppercase; letter-spacing: 2px; }
 
-    ul{
-      line-height:1.8;
-    }
-  </style>
+        .section { padding: 3rem 0; border-bottom: 1px solid #333; }
+        h2 { color: var(--primary-blue); border-left: 4px solid var(--primary-blue); padding-left: 15px; }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover { transform: translateY(-5px); border: 1px solid var(--primary-blue); }
+
+        .skill-tag {
+            display: inline-block;
+            background: #333;
+            padding: 5px 12px;
+            border-radius: 20px;
+            margin: 5px;
+            font-size: 0.9rem;
+        }
+
+        .experience-item { margin-bottom: 30px; }
+        .exp-header { display: flex; justify-content: space-between; align-items: baseline; }
+        .date { color: var(--primary-blue); font-weight: bold; }
+
+        .contact-btn {
+            display: inline-block;
+            background: var(--primary-blue);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        footer { text-align: center; padding: 2rem; color: var(--text-gray); font-size: 0.8rem; }
+    </style>
 </head>
-
 <body>
 
-<div class="card">
+<header>
+    <div class="container">
+        <h1>Queency Anne T. Lim [cite: 1]</h1>
+        <div class="subtitle">Technical Support | CSR | Sales Representative [cite: 4]</div>
+        <p>Expertise in troubleshooting, IoT systems, and financial support. [cite: 5, 15, 21]</p>
+        <a href="mailto:queencylim1995@gmail.com" class="contact-btn">Hire Me</a>
+    </div>
+</header>
 
-  <h1>Queency Lim</h1>
+<div class="container">
+    <section class="section">
+        <h2>Technical Arsenal</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Platforms</h3>
+                <span class="skill-tag">Salesforce [cite: 53]</span>
+                <span class="skill-tag">Zendesk [cite: 57]</span>
+                <span class="skill-tag">Oracle CRM [cite: 62]</span>
+                <span class="skill-tag">Zoho [cite: 66]</span>
+                <span class="skill-tag">GoHighLevel [cite: 67]</span>
+            </div>
+            <div class="card">
+                <h3>Communication</h3>
+                <span class="skill-tag">Slack [cite: 59]</span>
+                <span class="skill-tag">Twilio [cite: 53]</span>
+                <span class="skill-tag">Five9 [cite: 55]</span>
+                <span class="skill-tag">Zoom [cite: 54]</span>
+            </div>
+            <div class="card">
+                <h3>Productivity</h3>
+                <span class="skill-tag">Google Sheets [cite: 63]</span>
+                <span class="skill-tag">Asana [cite: 65]</span>
+                <span class="skill-tag">Microsoft Teams [cite: 56]</span>
+                <span class="skill-tag">Canva [cite: 56]</span>
+            </div>
+        </div>
+    </section>
 
-  <p>
-    Technical Support | CSR | Sales Representative | Virtual Assistant
-  </p>
+    <section class="section">
+        <h2>Professional Journey</h2>
+        
+        <div class="experience-item">
+            <div class="exp-header">
+                <h3>Technical-Sales Support | Asurion</h3>
+                <span class="date">Jun 2021 - Present [cite: 12, 13]</span>
+            </div>
+            <ul>
+                <li>Expert troubleshooting for mobile and IoT devices. [cite: 14, 15]</li>
+                <li>Driving revenue through strategic technology protection plans. [cite: 16]</li>
+            </ul>
+        </div>
 
-  <h2>About Me</h2>
+        <div class="experience-item">
+            <div class="exp-header">
+                <h3>Digital Support | Capital One</h3>
+                <span class="date">Apr 2021 - Jun 2021 [cite: 18, 19]</span>
+            </div>
+            <ul>
+                <li>Guided customers through digital banking and account security. [cite: 20, 21]</li>
+                <li>Enhanced financial management using digital toolsets. [cite: 22]</li>
+            </ul>
+        </div>
 
-  <p>
-    Experienced in customer support, technical troubleshooting,
-    sales, and virtual assistance.
-  </p>
+        <div class="experience-item">
+            <div class="exp-header">
+                <h3>Senior Agent / Tech Expert | iQor</h3>
+                <span class="date">2019 - 2021 [cite: 26, 27, 28]</span>
+            </div>
+            <ul>
+                <li>Promoted to Technical Support Specialist for telecom accounts. [cite: 30]</li>
+                <li>Managed high-level billing, retention, and sales strategies. [cite: 31]</li>
+            </ul>
+        </div>
+    </section>
 
-  <h2>Skills</h2>
-
-  <ul>
-    <li>Customer Service</li>
-    <li>Technical Support</li>
-    <li>Sales</li>
-    <li>Email & Chat Support</li>
-    <li>Virtual Assistance</li>
-  </ul>
-
-  <h2>Experience</h2>
-
-  <p>
-    Technical-Sales Support at Asurion (2021 - Present)
-  </p>
-
+    <section class="section" style="text-align: center;">
+        <h2>Let's Connect</h2>
+        <p>Located in: San Pedro City, Laguna [cite: 3]</p>
+        <p>Email: queencylim1995@gmail.com [cite: 2]</p>
+        <p>Phone: +63.905.414.5650 [cite: 2]</p>
+    </section>
 </div>
+
+<footer>
+    &copy; 2026 Queency Anne T. Lim. All Rights Reserved.
+</footer>
 
 </body>
 </html>
